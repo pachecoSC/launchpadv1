@@ -1,0 +1,54 @@
+<mvc:View controllerName="com.rmsystem.launchpadhome.controller.Principal" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:f="sap.f">
+    <Page id="page" showHeader="false">
+        <f:ShellBar id="_IDGenShellBar1" title="Launchpad Home" secondTitle="" homeIcon="https://sapui5.hana.ondemand.com/1.111.0/resources/sap/ushell/themes/base/img/SAPLogo.svg" showCopilot="false" showNotifications="true" showProductSwitcher="false" notificationsNumber="2">
+            <f:menu>
+                <Menu id="_IDGenMenu1">
+                    <MenuItem id="_IDGenMenuItem1" text="nombre app" icon="sap-icon://folder" />
+                    <MenuItem id="_IDGenMenuItem2" text="Home" icon="sap-icon://home" />
+                </Menu>
+            </f:menu>
+            <f:profile>
+                <Avatar id="_IDGenAvatar1" initials="UI" />
+            </f:profile>
+            <f:searchManager>
+                <f:SearchManager id="searchField" search="handlerSearchFieldSearch" liveChange="handlerSearchFieldLiveEvent" suggest="handlerSearchSuggestEvent" enableSuggestions="true" suggestionItems="{
+					path: '/ProductCollection',
+					sorter: { path: 'Name' }
+				}">
+                    <f:suggestionItems>
+                        <SuggestionItem id="_IDGenSuggestionItem1" text="{Name}" description="{path:'Price'} {path:'CurrencyCode'}" key="{ProductId}" />
+                    </f:suggestionItems>
+                </f:SearchManager>
+            </f:searchManager>
+        </f:ShellBar>
+
+        <content>
+            <IconTabBar id="idIconTabBarNoIcons" expanded="{device>/isNoPhone}" class="sapUiResponsiveContentPadding">
+                <items>
+                    <IconTabFilter id="_IDGenIconTabFilter1" text="Info" key="info">
+                        <GenericTile id="_IDGenGenericTile1" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Right click to open in new tab" subheader="Link tile" press="press" url="https://www.sap.com/">
+                            <TileContent id="_IDGenTileContent1" />
+                        </GenericTile>
+                        <GenericTile id="_IDGenGenericTile2" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Right click to open in new tab" subheader="Link tile" press="press" url="https://www.sap.com/">
+                            <TileContent id="_IDGenTileContent2" />
+                        </GenericTile>
+                    </IconTabFilter>
+                    <IconTabFilter id="_IDGenIconTabFilter2" text="Attachments" key="attachments">
+                        <GenericTile id="_IDGenGenericTile3" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Right click to open in new tab" subheader="Link tile" press="press" url="https://www.sap.com/">
+                            <TileContent id="_IDGenTileContent3" />
+                        </GenericTile>
+                        <GenericTile id="_IDGenGenericTile4" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Right click to open in new tab" subheader="Link tile" press="press" url="https://www.sap.com/">
+                            <TileContent id="_IDGenTileContent4" />
+                        </GenericTile>
+                    </IconTabFilter>
+                    <IconTabFilter id="_IDGenIconTabFilter3" text="Notes" key="notes">
+                        <Text id="_IDGenText1" text="Notes go here ..." />
+                    </IconTabFilter>
+                    <IconTabFilter id="_IDGenIconTabFilter4" text="People" key="people">
+                        <Text id="_IDGenText2" text="People content goes here ..." />
+                    </IconTabFilter>
+                </items>
+            </IconTabBar>
+        </content>
+    </Page>
+</mvc:View>
