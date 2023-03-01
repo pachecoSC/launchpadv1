@@ -42,6 +42,9 @@
                         </GenericTile>
                     </IconTabFilter>
                     <IconTabFilter id="_IDGenIconTabFilter3" text="Notes" key="notes">
+                        <GenericTile id="_IDGenGenericTile5" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Right click to open in new tab" subheader="Link tile" press="press" url="https://www.sap.com/">
+                            <TileContent id="_IDGenTileContent5" />
+                        </GenericTile>
                         <Text id="_IDGenText1" text="Notes go here ..." />
                     </IconTabFilter>
                     <IconTabFilter id="_IDGenIconTabFilter4" text="People" key="people">
