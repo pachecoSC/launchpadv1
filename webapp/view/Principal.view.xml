@@ -1,5 +1,5 @@
 <mvc:View controllerName="com.rmsystem.launchpadhome.controller.Principal" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:f="sap.f">
-    <Page id="page" showHeader="false">
+    <Page id="page" showHeader="false" class="sapUShellApplicationContainer sapUShellApplicationContainerLimitedWidth sapUshellDefaultBackground">
         <f:ShellBar id="_IDGenShellBar1" title="Launchpad Home" secondTitle="" homeIcon="https://sapui5.hana.ondemand.com/1.111.0/resources/sap/ushell/themes/base/img/SAPLogo.svg" showCopilot="false" showNotifications="true" showProductSwitcher="false" notificationsNumber="2">
             <f:menu>
                 <Menu id="_IDGenMenu1">

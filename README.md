@@ -33,4 +33,6 @@ A Fiori application.
 
 1. Active NodeJS LTS (Long Term Support) version and associated supported NPM version.  (See https://nodejs.org)
 
+### ajustes realizados
 
+02.03.2023 - se realizo un ajuste en el index url del sdk de sap se cambia antes de deployar el proyecto, se agrego clase a la vista principal.
