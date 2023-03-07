@@ -4,7 +4,7 @@
             <f:menu>
                 <Menu id="_IDGenMenu1">
                     <MenuItem id="_IDGenMenuItem1" text="nombre app" icon="sap-icon://folder" />
-                    <MenuItem id="_IDGenMenuItem2" text="Home" icon="sap-icon://home" />
+                    <MenuItem id="_IDGenMenuItem2" text="Home" icon="sap-icon://home" press="onHandleHome"/>
                 </Menu>
             </f:menu>
             <f:profile>
@@ -26,12 +26,14 @@
             <IconTabBar id="idIconTabBarNoIcons" expanded="{device>/isNoPhone}" class="sapUiResponsiveContentPadding">
                 <items>
                     <IconTabFilter id="_IDGenIconTabFilter1" text="Info" key="info">
-                        <GenericTile id="_IDGenGenericTile1" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Right click to open in new tab" subheader="Link tile" press="press" url="https://www.sap.com/">
+                    <content>
+                        <GenericTile id="_IDGenGenericTile1" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>name.app.title.tile}" subheader="" press="PressTailNota" url="http://localhost/proyectos/nota_credito/">
                             <TileContent id="_IDGenTileContent1" />
                         </GenericTile>
                         <GenericTile id="_IDGenGenericTile2" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Right click to open in new tab" subheader="Link tile" press="press" url="https://www.sap.com/">
                             <TileContent id="_IDGenTileContent2" />
                         </GenericTile>
+                    </content>
                     </IconTabFilter>
                     <IconTabFilter id="_IDGenIconTabFilter2" text="Attachments" key="attachments">
                         <GenericTile id="_IDGenGenericTile3" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Right click to open in new tab" subheader="Link tile" press="press" url="https://www.sap.com/">

@@ -29,6 +29,11 @@ sap.ui.define([
 
                 // set the device model
                 this.setModel(models.createDeviceModel(), "device");
+
+                // declarar modelos a utilizar a los largo del proyecto
+                var moRolxPermisos = new sap.ui.model.json.JSONModel();
+                sap.ui.getCore().setModel(moRolxPermisos, "mRolxPermisos");
+                this.setModel(moRolxPermisos, "mRolxPermisos");
             }
         });
     }

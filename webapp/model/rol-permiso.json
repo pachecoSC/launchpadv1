@@ -1,0 +1,17 @@
+{
+  "id_usuario": "P0001",
+  "email": "chris.pacheco@algo.com",
+  "rol": [
+    { "id_rol": "R01", "nombre_rol": "TI" },
+    { "id_rol": "R02", "nombre_rol": "Proveedores" }
+  ],
+  "permisos": [
+    {
+      "id_app": "com.rmsystem.notacredito",
+      "nombre_app": "Nota de Crédito",
+      "descripcion_app": "",
+      "rol_pertenece_app": "R02",
+      "link_app": ""
+    }
+  ]
+}

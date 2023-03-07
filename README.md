@@ -36,3 +36,6 @@ A Fiori application.
 ### ajustes realizados
 
 02.03.2023 - se realizo un ajuste en el index url del sdk de sap se cambia antes de deployar el proyecto, se agrego clase a la vista principal.
+
+06.03.2023 - se agrego funcionalidad de redireccion (pruebas fallidas)
+07.03.2023 - se agrego json de roles y permisos.
